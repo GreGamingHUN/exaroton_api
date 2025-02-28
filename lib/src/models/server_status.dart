@@ -10,4 +10,33 @@ class ServerStatus {
   static const int pending = 8;
   static const int transferring = 9;
   static const int preparing = 10;
+
+  static String getServerStatusFromValue(int value) {
+    switch (value) {
+      case offline:
+        return "Offline";
+      case online:
+        return "Online";
+      case starting:
+        return "Starting";
+      case stopping:
+        return "Stopping";
+      case restarting:
+        return "Restarting";
+      case saving:
+        return "Saving";
+      case loading:
+        return "Loading";
+      case crashed:
+        return "Crashed";
+      case pending:
+        return "Pending";
+      case transferring:
+        return "Transferring";
+      case preparing:
+        return "Preparing";
+      default:
+        return "Unknown";
+    }
+  }
 }

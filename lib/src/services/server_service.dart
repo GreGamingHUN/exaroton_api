@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:exaroton_api/exaroton_api.dart';
-import 'package:exaroton_api/src/models/server.dart';
 import 'package:http/http.dart';
 
 class ServerService {

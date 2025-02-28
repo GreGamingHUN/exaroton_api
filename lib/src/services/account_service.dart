@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:exaroton_api/exaroton_api.dart';
-import 'package:exaroton_api/src/models/account.dart';
 
 class AccountService {
   final ExarotonClient _client;
